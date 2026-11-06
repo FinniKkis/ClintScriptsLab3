@@ -1,0 +1,86 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: #f2f4f8;
+  color: #1f2933;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+h1 { text-align: center; }
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+button {
+  background: #2f6fed;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) { background: #1f56c4; }
+button:disabled { background: #9aa5b1; cursor: not-allowed; }
+
+label {
+  display: block;
+  margin: 12px 0 4px;
+  font-weight: 600;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px 10px;
+  font: inherit;
+  border: 1px solid #cbd2d9;
+  border-radius: 6px;
+}
+
+form button { margin-top: 16px; }
+
+.posts { margin-top: 16px; }
+
+.post {
+  border-top: 1px solid #e4e7eb;
+  padding: 12px 0;
+}
+
+.post h3 { margin: 0 0 6px; text-transform: capitalize; }
+.post p { margin: 0; line-height: 1.4; }
+
+.post.new { background: #eef6ff; padding: 12px; border-radius: 6px; }
+
+.message {
+  min-height: 1.5em;
+  padding: 0 4px;
+  font-weight: 600;
+}
+
+.http-status {
+  margin-top: 8px;
+  min-height: 1.4em;
+  font-size: 0.9rem;
+  font-family: monospace;
+  color: #52606d;
+}
+
+.http-status.ok { color: #1b7f3b; }
+.http-status.fail { color: #c0262d; }
+
+.message.loading { color: #52606d; }
+.message.success { color: #1b7f3b; }
+.message.error { color: #c0262d; }
